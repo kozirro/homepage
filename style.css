@@ -3,27 +3,105 @@ body {
     color: black;
 }
 
-.sectionHeader,
-.diaryHeader {
-    color: #1460AA;
-}
-
 p {
     color: darkblue;
 }
 
-#header {
+.header {
     color: red;
 }
 
-.thirdHeader {
-    color: #0496FF;
-}
-
-.heading {
+.header__title {
     color: #00487C;
 }
 
-.link {
+.navigation__link {
     color: #1A936F;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+}
+
+.box,
+.box-test {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    padding: 10px;
+    border: 10px solid red;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.box {
+    position: sticky;
+}
+
+#top {
+    position: fixed;
+}
+
+.box-test {
+    top: 30px;
+    background: blueviolet;
+    right: 75%;
+    z-index: 999;
+}
+
+.kok {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.diary {
+    clear: left;
+}
+
+.diary__header {
+    color: #1460AA;
+}
+
+.about {}
+
+.about__header {
+    color: #1460aa;
+}
+
+.about__paragraph {
+    padding: 16px;
+    font-size: 20px;
+}
+
+.about__paragraph--color {
+    color: #ff6700;
+}
+
+.about__link {
+    color: #1A936F;
+}
+
+.day {
+    padding: 16px;
+}
+
+.day__header {
+    margin: 0 0 16px;
+    color: #0496FF;
+    font-size: 20px;
+}
+
+.day_header--sunday {
+    color: darkred;
+}
+
+.diary__paragraph {
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
 }
