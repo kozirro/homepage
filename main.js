@@ -14,4 +14,10 @@ console.log(box.innerHTML)
 
 const paragraphs = document.querySelectorAll('p');
 
-console.log(paragraphs[0]);
+
+
+var button = document.querySelector('.header__button--js');
+button.addEventListener('click', (e) => {
+    const headerTitle = document.querySelector('.header__title');
+    headerTitle.innerHTML = 'zmieniony text';
+});
