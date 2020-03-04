@@ -14,10 +14,8 @@ console.log(box.innerHTML)
 
 const paragraphs = document.querySelectorAll('p');
 
-
-
-var button = document.querySelector('.header__button--js');
-button.addEventListener('click', (e) => {
-    const headerTitle = document.querySelector('.header__title');
-    headerTitle.innerHTML = 'zmieniony text';
+var menuSwitcher = document.querySelector('.navigation__switcher--js');
+menuSwitcher.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__list');
+    navigationList.classList.toggle('navigation__list--visible')
 });
